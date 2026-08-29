@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deb Khamaru - Full Stack Developer</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="./css/navStyle.css">
+    <link rel="stylesheet" href="./css/homeSectionStyle.css">
+    <link rel="stylesheet" href="./css/aboutSectionStyle.css">
+    <link rel="stylesheet" href="./css/experienceStyle.css">
+    <link rel="stylesheet" href="./css/contactStyle.css">
+    <link rel="stylesheet" href="./css/skillsStyle.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="root">
+
+        <!-- NAV SECTION -->
+        <nav class="navbar" id="nave-bar">
+            
+            <div class="nav-container">
+
+                <!-- My name with home link -->
+                <a href="#home" class="nav-name">DEB KHAMARU</a>
+
+                <!-- Oll section url -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home"       class="nav-link active" id="nav-home">Home</a></li>
+                    <li><a href="#about"      class="nav-link" id="nav-about">About</a></li>
+                    <li><a href="#skills"     class="nav-link" id="nav-skills">Skills</a></li>
+                    <li><a href="#projects"   class="nav-link" id="nav-projects">Projects</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+                    <li><a href="#contact"    class="nav-link" id="nav-contact">Contact</a></li>
+                </ul>
+
+                <!-- hire me button to redirect contact section -->
+                <div id="hire-me-btn" class="hireMeBtn"><a href="#contact">Hire Me</a></div>
+
+                <!-- The 3-line hamburger button -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span>   <!-- Line 1 -->
+                    <span></span>   <!-- Line 2 -->
+                    <span></span>   <!-- Line 3 -->
+                </button>
+
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero" id="home">
+
+                <div class="profile-card">
+
+                    <div class="hero-content">
+
+                        <div class="hero-badge"><div class="badge-dot"></div>Available for New Opportunity</div>
+
+                        <p class="intro">Hello, I'm</p>
+                        <h1>Deb Khamaru</h1>
+                        <h2>Full-Stack Developer</h2>
+
+                        <p class="description">
+                            I build responsive and user-friendly websites that
+                            turn ideas into real experiences.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <button><a href="#projects" class="primary-btn"> View My Work </a></button>
+                            <button><a href="#" class="cv-btn">Download CV </a></button>
+                        </div>
+
+                        <div class="social-links">
+                            <button class="social-link-button"><a href="https://github.com/DebKhamaru"><img src="../portfolio/assets/github-142-svgrepo-com.svg" alt="GitHub" class="social-links-svg"></a></button>
+                            <button class="social-link-button"><a href="https://www.linkedin.com/in/deb-khamaru-468b04396"><img src="../portfolio/assets/linkedin-round-svgrepo-com.svg" alt="LinkedIn" class="social-links-svg"></a></button>
+                            <button class="social-link-button"><a href="https://x.com/Deb_45_"><img src="../portfolio/assets/twitter-round-svgrepo-com.svg" alt="Twitter" class="social-links-svg"></a></button>
+                            <button class="social-link-button"><a href="mailto:debkhamaru45@gmail.com"><img src="../portfolio/assets/email-circle-fill-svgrepo-com.svg" alt="Email" class="social-links-svg" style="height: 50px; width: 50px;"></a></button>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="image-circle">
+                            <img src="../portfolio/assets/picture1.png" alt="My profile photo">
+
+                            <div class="hero-section-animation" id="java-animation"><img src="./assets/java-svgrepo-com.svg" alt="Java" class="animation-img">Java</div>
+                            <div class="hero-section-animation" id="nodejs-animation"><img src="./assets/nodejs-icon-svgrepo-com.svg" alt="Nodejs" class="animation-img">Node.js</div>
+                            <div class="hero-section-animation" id="react-animation"><img src="./assets/react-svgrepo-com.svg" alt="React" class="animation-img">React</div>
+                        </div>
+
+                        <div class="project-count"><h2>2+</h2><p>Project Completed</p></div>
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section id="about">
+
+                <div class="container">
+                    <div class="section-header"><span class="section-tag">01. ABOUT ME</span></div>
+                    <h2 class="section-title">The Person <span class="gradient-text">Behind the Code</span></h2>
+                    <div class="about-grid">
+                        <div class="about-image-wrap reveal">
+                            <!-- <div class="img-border"></div> -->
+                            <div class="about-img-card">
+                            <!-- <img src="./assets/background.jpg" alt=""> -->
+                                <img src="./assets/WhatsApp Image 2026-05-04 at 9.10.05 AM12.jpeg" alt="Deb Khamaru" class="about-img" />
+                                <div class="about-img-decoration"></div>
+                            </div>
+                        </div>
+                        <div class="about-text reveal">
+                            <h3 class="about-heading">Crafting Digital Experiences with Passion & Precision</h3>
+                            <p>I’m Deb Khamaru, a passionate Full-Stack Developer who enjoys building modern, responsive, and user-friendly web applications.</p>
+                            <p>I’m currently focused on strengthening my skills in HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, and Devops. I enjoy understanding how things work behind the scenes and turning ideas into functional, real-world applications.</p>
+                            <p>I’m always learning, experimenting with new technologies, and improving my problem-solving skills through hands-on projects. My goal is to become a skilled developer who can build scalable, efficient, and visually appealing web applications.</p>
+                            <div class="about-details">
+                                <div class="detail-item"><span class="detail-icon"><img class="contact-svg" src="./assets/location-svgrepo-com.svg" alt="location-svg"></span><span><h3>Location:</h3> Kolkata, West Bengal, India</span></div>
+                                <!-- <div class="detail-item"><span class="detail-icon">📧</span><span><strong>Email:</strong> alex@morgan.dev</span></div> -->
+                                <div class="detail-item"><span class="detail-icon"><img class="contact-svg" src="./assets/diploma-svgrepo-com.svg" alt="degree"></span><span><h3>Degree:</h3> Master of Computer Applications</span></div>
+                                <!-- <div class="detail-item"><span class="detail-icon">🌐</span><span><strong>Freelance:</strong> Available</span></div> -->
+                            </div>
+                            <div class="about-buttons">
+                                <button><a href="#contact">Know More About Me</a></button>
+                                <button><a href="" class="btn-outline" id="download-resume-btn" download>Download CV</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">02. Skills</span>
+                        <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+                    </div>
+
+                    <div class="skill-table">
+                        <div class="skill-button-container">
+                            <button class="skill-button active" id="FrontEnd-button">FrontEnd</button>
+                            <button class="skill-button" id="BackEnd-button">BackEnd</button>
+                            <button class="skill-button" id="programming-languages">Languages</button>
+                            <button class="skill-button" id="Tools-button">Tools & More</button>
+                        </div>
+                    </div>
+
+                    <div id="skills-container">
+                        <div class="skill-box active" id="frontend-skills">
+                            <div class="skill"><img src="./assets/html-svgrepo-com.svg" alt="HTML"><h2>HTML5</h2></div>
+                            <div class="skill"><img src="./assets/css-3-svgrepo-com.svg" alt="CSS"><h2>CSS3</h2></div>
+                            <div class="skill"><img src="./assets/js-official-svgrepo-com.svg" alt="JS"><h2>JavaScript</h2></div>
+                            <div class="skill"><img src="./assets/react-svgrepo-com.svg" alt="React"><h2>React.js</h2></div>
+                        </div>
+
+                        <div class="skill-box" id="backend-skills">
+                            <div class="skill"><img src="./assets/nodejs-icon-svgrepo-com.svg" alt="nodeJs"><h2>Node.js</h2></div>
+                            <div class="skill"><img src="./assets/express-js.png" alt="expressJs"><h2>Express.js</h2></div>
+                        </div>
+
+                        <div class="skill-box" id="programming-skills">
+                            <div class="skill"><img src="./assets/8999951.png" alt="c"><h2>C</h2></div>
+                            <div class="skill"><img src="./assets/cplusplus_plain_logo_icon_146580.webp" alt="c++"><h2>C++</h2></div>
+                            <div class="skill"><img src="./assets/java-svgrepo-com.svg" alt="java"><h2>Java</h2></div>
+                        </div>
+
+                            <!-- <div class="skill-box" id="database-skills"> -->
+                                
+                                <!-- <div class="skill"><img src="./assets/cplusplus_plain_logo_icon_146580.webp" alt="c++"><h2>C++</h2></div>
+                                <div class="skill"><img src="./assets/java-svgrepo-com.svg" alt="java"><h2>Java</h2></div> -->
+                                <!-- <div class="skill"><img src="./assets/react-svgrepo-com.svg" alt="React"><h2>React.js</h2></div>
+                            </div> -->
+
+                         <div class="skill-box" id="tools-skills">
+                            <div class="skill"><img src="./assets/mongodb-svgrepo-com.svg" alt="MongoDB"><h2>MongoDB</h2></div>
+                            <div class="skill"><img src="./assets/git-svgrepo-com.svg" alt="git"><h2>Git</h2></div>
+                            <div class="skill"><img src="./assets/github-color-svgrepo-com.svg" alt="c++"><h2>GitHub</h2></div>
+                            <div class="skill"><img src="./assets/vscode-svgrepo-com.svg" alt="java"><h2>VS Code</h2></div>
+                            <div class="skill"><img src="./assets/linux-svgrepo-com.svg" alt="React"><h2>Linux</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects"></section>
+
+            <section id="experience">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">04. Experience</span>
+                        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item" id="exp-1">
+                            <div class="timeline-date">2025 – Present</div>
+                                <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Master of Computer Applications (MCA)</h3>
+                                    <!-- <div class="timeline-date">2025 – Present</div> -->
+                                </div>
+                                <div class="timeline-company">RCCIIT</div>
+                                <p class="timeline-desc">Focused on advanced computer applications, software development, programming, databases, and modern web technologies.</p>
+                                <div class="timeline-tags"><div class="tag">MERN</div><div class="tag">DevOps</div><div class="tag">AWS</div></div>
+                            </div>
+                        </div>
+                            <div class="timeline-item" id="exp-2">
+                                <div class="timeline-date">2022 – 2025</div>
+                                <div class="timeline-card">
+                                    <div class="timeline-header">
+                                    <h3 class="timeline-role">Bachelor of Computer Applications (BCA)</h3>
+                                    <!-- <div class="timeline-date">2022 – 2025</div> -->
+                                </div>
+                                <span class="timeline-company">Burdwan Raj College</span>
+                                <p class="timeline-desc">Built a strong foundation in programming, web development, databases, computer networks, and software engineering.</p>
+                                <div class="timeline-tags"><div class="tag">C</div><div class="tag">C++</div><div class="tag">Java</div><div class="tag">DSA</div></div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" id="exp-3">
+                            <div class="timeline-date">2020 – 2022</div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Higher Secondary (HS)</h3>
+                                </div>
+                                <span class="timeline-company">WBCHSE</span>
+                                <p class="timeline-desc">Developed fundamental academic knowledge and problem-solving skills while preparing for higher education in computer applications.</p>
+                                <div class="timeline-tags"><div class="tag">Computer Basics</div></div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" id="exp-4">
+                             <!-- reveal -->
+                            <div class="timeline-date">2019 – 2020</div>
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <h3 class="timeline-role">Madhyamik</h3>
+                                    <!-- <span class="timeline-date">2019 – 2020</span> -->
+                                </div>
+                                <span class="timeline-company">WBBSE</span>
+                                <p class="timeline-desc">Completed secondary education and developed a strong foundation in mathematics, science, communication, and general academics.</p>
+                                <div class="timeline-tags"><div class="tag">Computer Basics</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">05. Contact</span>
+                        <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+                        <p class="section-subtitle">Have a project in mind? I'd love to hear about it. Send me a message and let's make something great.</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-info reveal">
+                            <div class="contact-card" id="contact-email-card">
+                                <div class="contact-icon"><img class="contact-svg" src="./assets/email-mail-web-svgrepo-com.svg" alt="email-svg"></div>
+                                <div><h4>Email</h4><a href="mailto:debkhamaru45@gmail.com">debkhamaru45@gmail.com</a></div>
+                            </div>
+                            <div class="contact-card" id="contact-location-card">
+                                <div class="contact-icon"><img class="contact-svg" src="./assets/location-svgrepo-com.svg" alt="location-svg"></div>
+                                <div><h4>Location</h4><span>Kolkata, India</span></div>
+                            </div>
+                            <div class="social-links">
+                                <button class="social-link-button"><a href="https://github.com/DebKhamaru"><img src="../portfolio/assets/github-142-svgrepo-com.svg" alt="GitHub" class="social-links-svg"></a></button>
+                                <button class="social-link-button"><a href="https://www.linkedin.com/in/deb-khamaru-468b04396"><img src="../portfolio/assets/linkedin-round-svgrepo-com.svg" alt="LinkedIn" class="social-links-svg"></a></button>
+                                <button class="social-link-button"><a href="https://x.com/Deb_45_"><img src="../portfolio/assets/twitter-round-svgrepo-com.svg" alt="Twitter" class="social-links-svg"></a></button>
+                                <button class="social-link-button"><a href="mailto:debkhamaru45@gmail.com"><img src="../portfolio/assets/email-circle-fill-svgrepo-com.svg" alt="Email" class="social-links-svg" style="height: 50px; width: 50px;"></a></button>
+                            </div>
+                        </div>
+                        <form class="contact-form reveal" id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactName">Full Name</label>
+                                    <input type="text" id="contactName" name="name" placeholder="Enter your name" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address</label>
+                                    <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required/>
+                                </div>
+                            </div>
+                                <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <input type="text" id="contactSubject" name="subject" placeholder="Project Inquiry"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>  
+                            <button type="submit" class="btn-primary btn-full" id="contact-submit-btn">Send Message</button>
+                            <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+    </div>
+
+    <script src="./index.js"></script>
+    
+</body>
+</html>

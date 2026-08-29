@@ -1,0 +1,87 @@
+.skill-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.skill-button-container {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.053);
+    /* background: transparent; */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.242);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-button {
+    padding: 0px 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.13);
+    /* border: 1px solid rgba(255, 255, 255, 0.13); */
+    border: transparent;
+    background: transparent;
+    border-radius: 10px;
+    height: 2.7rem;
+    /* width: 100%; */
+    /* width: 8rem; */
+}
+
+#BackEnd-button {
+    margin: 0px 10px;
+}
+
+.skill-button-container .active {
+    background: linear-gradient(
+        90deg,
+        rgb(237, 100, 166),
+        #941867
+    );
+}
+
+#skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: #941867; */
+}
+
+.skill-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgba(148, 148, 148, 0.495);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    box-shadow: 0px 0px 10px 1px #186a33;
+    background-color: #85d3960e;
+    transform: translateY(-3px);
+}
+
+.skill img {
+    /* margin: 5px; */
+    height: 100px;
+    width: 100px;
+    /* background-color: #941867; */
+    margin: 0px 5px;
+}
+
+.skill h2 {
+    text-align: center;
+}

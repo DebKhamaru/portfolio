@@ -1,0 +1,113 @@
+#about { 
+    background: rgba(85, 85, 85, 0.183); 
+    padding: 0px 20px;
+}
+
+.about-grid { 
+    display:grid; 
+    grid-template-columns:1fr 1.5fr; 
+    gap:4rem; 
+    align-items:center; 
+}
+
+/* .img-border {
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    border-radius: 20px;
+    border:1px solid rgb(12, 11, 11); 
+    box-shadow: inset 0px 0px 10px 1px rgb(94, 21, 45);
+} */
+
+.about-img-card { 
+    /* margin: 30px; */
+    border-radius: 20px; 
+    overflow:hidden; 
+    border:1px solid rgb(12, 11, 11); 
+    box-shadow: 0px 0px 10px 2px rgb(94, 21, 45);
+}
+
+.about-img { 
+    width:100%;
+}
+
+.about-heading { 
+    font-size: 1.7rem; 
+    font-weight:700; 
+    margin-bottom:16px; 
+    line-height:1.3; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* color:cornflowerblue; */
+    color: indianred;
+    /* color: hotpink; */
+    /* font-variation-settings: "0" 100; */
+}
+
+.about-text p { 
+    color: rgb(221, 222, 222);
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height:1.5; 
+    margin-bottom:10px; 
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.about-details { 
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:12px; 
+    margin:24px 0; 
+}
+
+.detail-item { 
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+    font-size:1rem; 
+}
+.detail-icon { 
+    font-size:1.5rem; 
+}
+
+.detail-item span { 
+    color: rgb(158, 158, 158); 
+}
+
+.about-actions {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* ABOUT BUTTONS */
+
+.about-buttons {
+    display: flex;
+    gap: 3rem;
+}
+
+.about-buttons button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-buttons button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        rgb(237, 100, 180),
+        rgb(200, 48, 152)
+    );
+    border: 2px solid rgb(5, 21, 52);
+    transition: 0.3s;
+}
