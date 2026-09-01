@@ -57,6 +57,28 @@ window.addEventListener("scroll", () => {
     });
 });
 
+// ─── NAVBAR SCROLL ───
+// const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  updateActiveNavLink();
+  toggleBackToTop();
+});
+
+// ─── HAMBURGER MENU ───
+const hamburger = document.getElementById('hamburger');
+const nLinks  = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  nLinks.classList.toggle('mobile-open');
+});
+navLinks.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    nLinks.classList.remove('mobile-open');
+  });
+});
+
 // ─── SKILLS TABS ───
 // document.querySelectorAll('skill-button').forEach(btn => {
 //     btn.addEventListener('click', () => {

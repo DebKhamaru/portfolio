@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -79,6 +80,7 @@ button:active {
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 50px;
+    /* border-top: 1px solid rgba(229, 229, 249, 0.432); */
 }
 
 /* heading */
