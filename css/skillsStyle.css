@@ -9,7 +9,6 @@
 .skill-button-container {
     padding: 5px 15px;
     background-color: rgba(255, 255, 255, 0.053);
-    /* background: transparent; */
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.242);
     display: grid;
@@ -23,13 +22,10 @@
     font-weight: bold;
     font-size: 1rem;
     background-color: rgba(255, 255, 255, 0.13);
-    /* border: 1px solid rgba(255, 255, 255, 0.13); */
     border: transparent;
     background: transparent;
     border-radius: 10px;
     height: 2.7rem;
-    /* width: 100%; */
-    /* width: 8rem; */
 }
 
 #BackEnd-button {
@@ -39,9 +35,15 @@
 .skill-button-container .active {
     background: linear-gradient(
         90deg,
-        rgb(237, 100, 166),
-        #941867
+        rgb(111, 35, 134),
+        rgb(65, 8, 101)
     );
+    border: 1px solid rgba(255, 255, 255, 0.381);
+}
+
+.skill-button:hover {
+    background-color: rgba(255, 255, 255, 0.119);
+    transform: translateY(0px);
 }
 
 #skills-container {
@@ -50,14 +52,17 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* background-color: #941867; */
 }
 
 .skill-box {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.skill-box.active {
+    display: flex;
 }
 
 .skill {
@@ -75,10 +80,8 @@
 }
 
 .skill img {
-    /* margin: 5px; */
     height: 100px;
     width: 100px;
-    /* background-color: #941867; */
     margin: 0px 5px;
 }
 

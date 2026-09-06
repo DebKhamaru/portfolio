@@ -1,5 +1,4 @@
 #about { 
-    /* background: rgba(85, 85, 85, 0.183);  */
     padding: 0px 20px;
 }
 
@@ -10,22 +9,11 @@
     align-items:center; 
 }
 
-/* .img-border {
-    padding: 30px;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 auto;
-    border-radius: 20px;
-    border:1px solid rgb(12, 11, 11); 
-    box-shadow: inset 0px 0px 10px 1px rgb(94, 21, 45);
-} */
-
 .about-img-card { 
-    /* margin: 30px; */
     border-radius: 20px; 
     overflow:hidden; 
     border:1px solid rgb(12, 11, 11); 
-    box-shadow: 0px 0px 10px 2px rgb(94, 21, 45);
+    box-shadow: 0px 0px 10px 2px gray;
 }
 
 .about-img { 
@@ -40,10 +28,7 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    /* color:cornflowerblue; */
     color: indianred;
-    /* color: hotpink; */
-    /* font-variation-settings: "0" 100; */
 }
 
 .about-text p { 
@@ -76,8 +61,11 @@
     font-size:1.5rem; 
 }
 
-.detail-item span { 
-    color: rgb(158, 158, 158); 
+.detail-item { 
+    color: gray;
+}
+.detail-item h3 { 
+    color: mediumseagreen;
 }
 
 .about-actions {

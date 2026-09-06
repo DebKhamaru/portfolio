@@ -87,7 +87,7 @@
 
                         <div class="hero-buttons">
                             <button><a href="#projects" class="primary-btn"> View My Work </a></button>
-                            <button><a href="#" class="cv-btn">Download CV </a></button>
+                            <button><a href="./resume/Deb_Khamaru_Resume.pdf" class="cv-btn" download>Download CV </a></button>
                         </div>
 
                         <div class="social-links">
@@ -122,8 +122,6 @@
                     <h2 class="section-title">The Person <span class="gradient-text">Behind the Code</span></h2>
                     <div class="about-grid">
                         <div class="about-image-wrap reveal">
-                            <!-- <img src="./assets/realistic-black-background-with-golden-textures_23-2149151905.avif" alt=""> -->
-                            <!-- <div class="img-border"></div> -->
                             <div class="about-img-card">
                                 <img src="./assets/WhatsApp Image 2026-05-04 at 9.10.05 AM12.jpeg" alt="Deb Khamaru" class="about-img" />
                                 <div class="about-img-decoration"></div>
@@ -136,13 +134,11 @@
                             <p>I’m always learning, experimenting with new technologies, and improving my problem-solving skills through hands-on projects. My goal is to become a skilled developer who can build scalable, efficient, and visually appealing web applications.</p>
                             <div class="about-details">
                                 <div class="detail-item"><span class="detail-icon"><img class="contact-svg" src="./assets/location-svgrepo-com.svg" alt="location-svg"></span><span><h3>Location:</h3> Kolkata, West Bengal, India</span></div>
-                                <!-- <div class="detail-item"><span class="detail-icon">📧</span><span><strong>Email:</strong> alex@morgan.dev</span></div> -->
                                 <div class="detail-item"><span class="detail-icon"><img class="contact-svg" src="./assets/diploma-svgrepo-com.svg" alt="degree"></span><span><h3>Degree:</h3> Master of Computer Applications</span></div>
-                                <!-- <div class="detail-item"><span class="detail-icon">🌐</span><span><strong>Freelance:</strong> Available</span></div> -->
                             </div>
                             <div class="about-buttons">
                                 <button><a href="#contact">Know More About Me</a></button>
-                                <button><a href="" class="btn-outline" id="download-resume-btn" download>Download CV</a></button>
+                                <button><a href="./resume/Deb_Khamaru_Resume.pdf" class="btn-outline" id="download-resume-btn" download>Download CV</a></button>
                             </div>
                         </div>
                     </div>
@@ -158,23 +154,23 @@
                     </div>
 
                     <div class="skill-table">
-                        <div class="skill-button-container">
-                            <button class="skill-button active" id="FrontEnd-button">FrontEnd</button>
-                            <button class="skill-button" id="BackEnd-button">BackEnd</button>
-                            <button class="skill-button" id="programming-languages">Languages</button>
-                            <button class="skill-button" id="Tools-button">Tools & More</button>
+                        <div class="skill-button-container" id="skill-buttons">
+                            <button class="skill-button active" id="frontEnd">FrontEnd</button>
+                            <button class="skill-button" id="backEnd">BackEnd</button>
+                            <button class="skill-button" id="programming">Languages</button>
+                            <button class="skill-button" id="tools">Tools & More</button>
                         </div>
                     </div>
 
                     <div id="skills-container">
-                        <div class="skill-box active" id="frontend-skills">
+                        <div class="skill-box active" id="frontEnd-skills">
                             <div class="skill"><img src="./assets/html-svgrepo-com.svg" alt="HTML"><h2>HTML5</h2></div>
                             <div class="skill"><img src="./assets/css-3-svgrepo-com.svg" alt="CSS"><h2>CSS3</h2></div>
                             <div class="skill"><img src="./assets/js-official-svgrepo-com.svg" alt="JS"><h2>JavaScript</h2></div>
                             <div class="skill"><img src="./assets/react-svgrepo-com.svg" alt="React"><h2>React.js</h2></div>
                         </div>
 
-                        <div class="skill-box" id="backend-skills">
+                        <div class="skill-box" id="backEnd-skills">
                             <div class="skill"><img src="./assets/nodejs-icon-svgrepo-com.svg" alt="nodeJs"><h2>Node.js</h2></div>
                             <div class="skill"><img src="./assets/express-js.png" alt="expressJs"><h2>Express.js</h2></div>
                         </div>
@@ -185,14 +181,7 @@
                             <div class="skill"><img src="./assets/java-svgrepo-com.svg" alt="java"><h2>Java</h2></div>
                         </div>
 
-                            <!-- <div class="skill-box" id="database-skills"> -->
-                                
-                                <!-- <div class="skill"><img src="./assets/cplusplus_plain_logo_icon_146580.webp" alt="c++"><h2>C++</h2></div>
-                                <div class="skill"><img src="./assets/java-svgrepo-com.svg" alt="java"><h2>Java</h2></div> -->
-                                <!-- <div class="skill"><img src="./assets/react-svgrepo-com.svg" alt="React"><h2>React.js</h2></div>
-                            </div> -->
-
-                         <div class="skill-box" id="tools-skills">
+                        <div class="skill-box" id="tools-skills">
                             <div class="skill"><img src="./assets/mongodb-svgrepo-com.svg" alt="MongoDB"><h2>MongoDB</h2></div>
                             <div class="skill"><img src="./assets/git-svgrepo-com.svg" alt="git"><h2>Git</h2></div>
                             <div class="skill"><img src="./assets/github-color-svgrepo-com.svg" alt="c++"><h2>GitHub</h2></div>
@@ -217,7 +206,6 @@
                                 <div class="timeline-card">
                                 <div class="timeline-header">
                                     <h3 class="timeline-role">Master of Computer Applications (MCA)</h3>
-                                    <!-- <div class="timeline-date">2025 – Present</div> -->
                                 </div>
                                 <div class="timeline-company">RCCIIT</div>
                                 <p class="timeline-desc">Focused on advanced computer applications, software development, programming, databases, and modern web technologies.</p>
@@ -229,7 +217,6 @@
                                 <div class="timeline-card">
                                     <div class="timeline-header">
                                     <h3 class="timeline-role">Bachelor of Computer Applications (BCA)</h3>
-                                    <!-- <div class="timeline-date">2022 – 2025</div> -->
                                 </div>
                                 <span class="timeline-company">Burdwan Raj College</span>
                                 <p class="timeline-desc">Built a strong foundation in programming, web development, databases, computer networks, and software engineering.</p>
@@ -253,7 +240,6 @@
                             <div class="timeline-card">
                                 <div class="timeline-header">
                                     <h3 class="timeline-role">Madhyamik</h3>
-                                    <!-- <span class="timeline-date">2019 – 2020</span> -->
                                 </div>
                                 <span class="timeline-company">WBBSE</span>
                                 <p class="timeline-desc">Completed secondary education and developed a strong foundation in mathematics, science, communication, and general academics.</p>

@@ -8,89 +8,65 @@ window.addEventListener("scroll", ()=> {
     }
 });
 
-const navLinks = document.querySelectorAll(".nav-link");
-const sections = document.querySelectorAll("section");
 
-let isScrollingByClick = false;
+document.addEventListener("DOMContentLoaded", () => {
 
-navLinks.forEach(link => {
-    link.addEventListener("click", function () {
+    // NAVBAR SCROLL
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+        window.addEventListener("scroll", () => {
+            navbar.classList.toggle(
+                "scrolled",
+                window.scrollY > 50
+            );
 
-        isScrollingByClick = true;
+            updateActiveNavLink();
+            toggleBackToTop();
+        });
+    }
 
-        // Remove active from all buttons
-        navLinks.forEach(nav => nav.classList.remove("active"));
+    // HAMBURGER MENU
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
 
-        // Immediately activate the clicked button
-        this.classList.add("active");
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("open");
+            navLinks.classList.toggle("mobile-open");
+        });
 
-        // Allow scroll detection again after smooth scrolling
-        setTimeout(() => {
-            isScrollingByClick = false;
-        }, 1000);
-    });
-});
 
-window.addEventListener("scroll", () => {
-
-    // Don't change active button while smooth scrolling
-    if (isScrollingByClick) 
-        return;
-
-    let currentSection = "";
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-
-        if (window.scrollY >= sectionTop - 200) {
-            currentSection = section.id;
+        // Get all elements having class "nav-link"
+        const navItems = document.getElementsByClassName("nav-link");
+        for (const link of navItems) {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("open");
+                navLinks.classList.remove("mobile-open");
+            });
         }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-        }
-    });
+    }
 });
 
-// ─── NAVBAR SCROLL ───
-// const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-  updateActiveNavLink();
-  toggleBackToTop();
-});
+// skills buttons
 
-// ─── HAMBURGER MENU ───
-const hamburger = document.getElementById('hamburger');
-const nLinks  = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  nLinks.classList.toggle('mobile-open');
-});
-navLinks.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    nLinks.classList.remove('mobile-open');
-  });
-});
+const skillButtons = document.getElementById("skill-buttons");
+let activeSkillButton = document.getElementById("frontEnd");
+const skillContainer = document.getElementById("skills-container");
+let activeSkillContainer = document.getElementById("frontEnd-skills");
 
-// ─── SKILLS TABS ───
-// document.querySelectorAll('skill-button').forEach(btn => {
-//     btn.addEventListener('click', () => {
-//         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-//         document.querySelectorAll('.skills-panel').forEach(p => p.classList.remove('active'));
-//         btn.classList.add('active');
-//         const panel = document.getElementById('panel-' + btn.dataset.tab);
-//         if (panel) {
-//             panel.classList.add('active');
-//             panel.querySelectorAll('.reveal:not(.visible)').forEach(el => {
-//                 setTimeout(() => revealObserver.observe(el), 50);
-//             });
-//         }
-//     });
-// });
+skillButtons.addEventListener("click", (e)=> {
+    if(e.target.id == "skill-buttons"){
+        return ;
+    }
+    activeSkillButton.classList.remove("active");
+    activeSkillButton = document.getElementById(`${e.target.id}`);
+    activeSkillButton.classList.add("active");
+    if(activeSkillContainer.id == `${e.target.id}-skills`) {
+        return ;
+    }
+    activeSkillContainer.classList.remove("active");
+    activeSkillContainer = document.getElementById(`${e.target.id}-skills`);
+    activeSkillContainer.classList.add("active");
+    skillContainer.append(activeSkillContainer);
+    console.log("hello");
+})

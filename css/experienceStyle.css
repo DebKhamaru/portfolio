@@ -14,9 +14,6 @@
     flex-wrap: wrap;
     margin:0 auto;
     padding: 10px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .timeline-card {
@@ -37,26 +34,18 @@
     transform: translateY(-3px);
 }
 
-/* .timeline-header {
-    display: flex;
-    justify-content: space-between;
-} */
 
 .timeline-date {
     height: 2rem;
-    /* width: 13rem; */
     width: 8rem;
     font-size:1rem; 
     color:#c6cfdc; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* white-space:nowrap;  */
-    /* padding:5px 13px;  */
     background:rgba(134, 116, 178, 0.155); 
     border-radius:30px;
     border: 1px solid rgba(255, 255, 255, 0.486);
-    /* border: 0.5px solid paleturquoise; */
 }
 
 .timeline-header {

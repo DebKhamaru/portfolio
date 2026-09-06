@@ -24,7 +24,7 @@ button:hover {
     cursor: pointer;
 }
 
-/*  SOCIAL LINKS */
+/*  LINKS */
 
 .social-links {
     display: flex;
@@ -62,6 +62,7 @@ button:hover {
     width: 45px;
 }
 
+/* ─── BUTTONS ─── */
 button:hover {
     transform: translateY(-3px);
 }
@@ -128,27 +129,33 @@ button:active {
         gap: 1rem;
     }
     .section-header { 
-        /* text-align: center;  */
         padding-top: 75px;
     }
 }
 
 /* ── At 950px screen width → switch to mobile mode ── */
 @media screen and (max-width: 950px) {
+    section {
+        scroll-margin-top: 30px;
+    }
+
     /* nav bar */
     .nav-container {
         justify-content: space-between;
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
     /* Hide the regular nav links and Hire Me button */
     .nav-links, .hireMeBtn { 
         display: none; 
     }
+
     /* Show the hamburger button */
     .hamburger { 
         display: flex; 
     }
+
     /* When .mobile-open is added by JS → show the dropdown menu */
     .nav-links.mobile-open {
     display: flex;
@@ -163,6 +170,7 @@ button:active {
     z-index: 999;
     animation: slideDown 0.3s ease;
     }
+
     /* Slide-down animation */
     @keyframes slideDown {
         from { 
@@ -176,6 +184,7 @@ button:active {
     }
 
 
+    /* hero section */
     .hero {
         padding: 80px 4%;
         padding-bottom: 40px;
@@ -190,7 +199,6 @@ button:active {
         justify-content: center;
     }
     .section-header { 
-        /* text-align: center;  */
         padding-top: 50px;
     }
 
@@ -223,6 +231,12 @@ button:active {
 }
 
 @media screen and (max-width: 600px) {
+    .section-header {
+        font-size: .8rem;
+        padding-top: 30px;
+    }
+
+    /* hero section */
     .hero {
         padding: 80px 3%;
         padding-bottom: 30px;
@@ -236,13 +250,9 @@ button:active {
 
     .about-img-card {
         width: 80%;
-        /* margin: 0 auto; */
-    }
-    .section-header {
-        font-size: .8rem;
-        padding-top: 30px;
     }
 
+    /* contact section */
     #contact .container {
         padding: 0px 30px;
     }
@@ -251,12 +261,22 @@ button:active {
     }
 
     .skill-button-container {
-        grid-template-columns: 1fr 1fr;
-        padding: 10px;
+        padding: 5px; 
+        gap: 5px;
+    }
+
+    .skill-button-container button {
+        font-size: 10px;
+        padding: 4px;
+        transform: translateY(0px);
     }
 }
 
 @media screen and (max-width:500px) {
+    section {
+        scroll-margin-top: 40px;
+    }
+
     .nav-container {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -346,10 +366,6 @@ button:active {
     }
     .about-grid { 
         gap:2rem; 
-        /* display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center; */ 
     }
 
 
@@ -378,13 +394,7 @@ button:active {
 }
 
 @media screen and (max-width:400px) {
-    /* .about-img {
-        width: 200px;
-    }
-    .about-img-card {
-        width: 250px; 
-    } */
-
+    
     /* about buttons */
     .about-buttons button {
         padding: 12px 30px;
@@ -401,6 +411,7 @@ button:active {
         /* justify-content: center; */
     }
 
+    /* contact section */
     #contact .container {
         padding: 0px 20px;
     }

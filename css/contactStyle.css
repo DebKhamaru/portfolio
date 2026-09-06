@@ -5,15 +5,12 @@
 
 #contact .container {
     padding: 0px 50px 20px 50px;
-    /* margin-bottom: 20px; */
 }
 
 .contact-grid { 
-    /* margin: 50px; */
     display:grid; 
     grid-template-columns:1fr 1.5fr; 
     gap:3rem; 
-    /* align-items:start;  */
 }
 
 .contact-form {
@@ -134,11 +131,3 @@
     border: 2px solid rgb(5, 21, 52);
     transition: 0.3s;
 }
-
-/* .btn-primary:hover {
-    transform: translateY(-3px);
-}
-
-.btn-primary:active {
-    transform: scale(0.9);
-} */
