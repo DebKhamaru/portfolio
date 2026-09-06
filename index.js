@@ -9,6 +9,31 @@ window.addEventListener("scroll", ()=> {
 });
 
 
+// active nave links 
+const sections = document.querySelectorAll("section");
+let activeLink = document.getElementById('nav-home');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            if(activeLink != 'nav-${entry.target.id}') { 
+                activeLink.classList.remove('active');
+                activeLink = document.getElementById(`nav-${entry.target.id}`);
+                activeLink.classList.add('active');
+            }
+        }
+
+    });
+}, {
+    threshold: 0.7
+});
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
     // NAVBAR SCROLL
